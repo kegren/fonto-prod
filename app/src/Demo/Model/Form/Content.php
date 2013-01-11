@@ -20,7 +20,7 @@ class Content extends Base
             'data' => array(
                 'rules' => 'required',
                 'messages' => array(
-                    'required' => 'you most fill in a value'
+                    'required' => 'you must fill in a value'
                 )
             ),
             'type' => array(
