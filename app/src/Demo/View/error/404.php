@@ -45,7 +45,7 @@
         <h1><span class="highlight">404</span>: <?php echo $e; ?></h1>
     </header>
     <section>
-        <h2>Sorry, but it seems to me like you have gone wrong. </h2>
+        <h2>Sorry, the page wasn't found.</h2>
         <a href="<?php echo $baseUrl; ?>">Go back</a>
     </section>
 </div>
