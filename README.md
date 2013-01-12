@@ -23,3 +23,8 @@ of database tables. You only need to install them if you are planning to use
 the demo application.
 
 6. You can now start using Fonto as a CMS if you like. Enjoy.
+
+Note
+----
+
+You might need to use RewriteBase in the .htaccess file.
