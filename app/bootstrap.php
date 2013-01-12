@@ -27,9 +27,6 @@ require SYSCOREAPPPATH . 'App' . EXT;
 
 /**
  * Sets error reporting
- *
- *  0 = Turns off all
- * -1 = Shows all
  */
 error_reporting(0);
 
