@@ -55,7 +55,8 @@ return array(
             'About me' => 'page/view/about-page',
             'My Blog' => 'blog',
             'Guestbook' => 'guestbook',
-            'Documentation' => 'doc'
+            'Documentation' => 'doc',
+            'Content' => 'content'
         )
     )
 );
