@@ -177,7 +177,9 @@ class Router
     {
         $requestUri = $this->getRequest()->getRequestUri();
         $requestUriArr = explode('/', $requestUri);
-
+		$cleanArray = new \Fonto\Helper\Arr();
+        $requestUriArr = $cleanArray->cleanArray($requestUriArr);
+		
         foreach ($this->routes as $route => $options) {
 
             // Checks if regular route without any patterns
