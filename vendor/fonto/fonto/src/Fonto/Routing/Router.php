@@ -177,8 +177,8 @@ class Router
     {
         $requestUri = $this->getRequest()->getRequestUri();
         $requestUriArr = explode('/', $requestUri);
-		$cleanArray = new \Fonto\Helper\Arr();
-        $requestUriArr = $cleanArray->cleanArray($requestUriArr);
+		//$cleanArray = new \Fonto\Helper\Arr();
+        //$requestUriArr = $cleanArray->cleanArray($requestUriArr);
 		
         foreach ($this->routes as $route => $options) {
 
