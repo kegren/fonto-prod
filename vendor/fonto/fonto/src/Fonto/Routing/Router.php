@@ -177,8 +177,8 @@ class Router
     {
         $requestUri = $this->getRequest()->getRequestUri();
         $requestUriArr = explode('/', $requestUri);
-		//$cleanArray = new \Fonto\Helper\Arr();
-        //$requestUriArr = $cleanArray->cleanArray($requestUriArr);
+		$cleanArray = new \Fonto\Helper\Arr();
+        $requestUriArr = $cleanArray->cleanArray($requestUriArr);
 		
         foreach ($this->routes as $route => $options) {
 
@@ -226,8 +226,8 @@ class Router
                     $this->getRoute()->createRoute(
                         array(
                             'controller' => $controller,
-                            'action' => isset($requestUriArr[1]) ? $requestUriArr[1] : 'index',
-                            'params' => isset($requestUriArr[2]) ? array_splice($requestUriArr, 2) : array(),
+                            'action' => isset($requestUriArr[0]) ? $requestUriArr[0] : 'index',
+                            'params' => isset($requestUriArr[1]) ? array_splice($requestUriArr, 1) : array(),
                             'restful' => isset($isRestful) ? $isRestful : false,
                         )
                     );
