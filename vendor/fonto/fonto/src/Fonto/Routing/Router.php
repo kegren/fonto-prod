@@ -179,7 +179,11 @@ class Router
         $requestUriArr = explode('/', $requestUri);
 		$cleanArray = new \Fonto\Helper\Arr();
         $requestUriArr = $cleanArray->cleanArray($requestUriArr);
-		
+
+        if (empty($requestUri)) {
+            $requestUri = self::DEFAULT_ROUTE;
+        }
+
         foreach ($this->routes as $route => $options) {
 
             // Checks if regular route without any patterns
