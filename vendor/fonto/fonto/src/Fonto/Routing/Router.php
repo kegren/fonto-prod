@@ -179,6 +179,7 @@ class Router
         $requestUriArr = explode('/', $requestUri);
 		$cleanArray = new \Fonto\Helper\Arr();
         $requestUriArr = $cleanArray->cleanArray($requestUriArr);
+        $requestUriArr = array_values($requestUriArr); // Resets index
 
         if (empty($requestUri)) {
             $requestUri = self::DEFAULT_ROUTE;
